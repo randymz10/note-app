@@ -3,7 +3,7 @@ import { useState } from "react";
 function NewNote({ onAddNote }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [count, setCount] = useState(2);
+  const [count, setCount] = useState(3);
 
   function handleTitle(e) {
     setTitle(e.target.value);

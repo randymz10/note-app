@@ -3,7 +3,8 @@ import ListItem from "./ListItem";
 
 function NoteList({ notes }) {
   return (
-      <main>
+    <main>
+      <div className="row">
         {notes.map((note) => (
           <ListItem
             key={note.id}
@@ -11,8 +12,8 @@ function NoteList({ notes }) {
             description={note.description}
           />
         ))}
-      </main>
-
+      </div>
+    </main>
   );
 }
 
